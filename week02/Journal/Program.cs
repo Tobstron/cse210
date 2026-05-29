@@ -58,4 +58,24 @@ class Program
             }
         }
     }
+
+class PromptGenerator
+{
+    private string[] _prompts = new string[]
+    {
+        "What was the best part of your day?",
+        "What are you grateful for today?",
+        "Write about a challenge you overcame.",
+        "Describe a goal you want to achieve this week.",
+        "What made you smile today?"
+    };
+
+    private Random _random = new Random();
+
+    public string GetRandomPrompt()
+    {
+        int index = _random.Next(_prompts.Length);
+        return _prompts[index];
+    }
+}
 }
