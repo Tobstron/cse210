@@ -1,9 +1,15 @@
-using System;
-
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the EternalQuest Project.");
+        /*
+         * Creativity:
+         * Added score tracking system.
+         * Added leveling system based on points.
+         * Goals can be saved and loaded from files.
+         */
+
+        GoalManager manager = new GoalManager();
+        manager.Start();
     }
 }
